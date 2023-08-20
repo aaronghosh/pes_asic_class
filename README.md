@@ -1,91 +1,47 @@
-# VLSI Physical Design for ASICs
+# ASIC Design Workshop
 
-## Objective
-The primary aim of VLSI (Very Large Scale Integration) physical design for ASICs (Application-Specific Integrated Circuits) is to transform a logical design description (RTL - Register Transfer Level) into a physical layout that can be fabricated as an integrated circuit. This involves translating the high-level functional representation of the circuit into a physical implementation that meets design constraints, performance targets, and manufacturability requirements.
-
-## Skill Outcomes
-- Architectural Design
-- RTL Design / Behavioral Modeling
-- Floorplanning
-- Placement
-- Clock Tree Synthesis
-- Routing
-
-## Installation
-You can find the installation script [here](https://github.com/kunalg123/riscv_workshop_collaterals/blob/master/run.sh).
-
-To run the installation:
-1. Download the `run.sh` script.
-2. Open your terminal.
-3. Navigate to the `Downloads` directory using the command `cd Downloads`.
-4. Execute the script using `./run.sh`.
+Welcome to the ASIC Design Workshop repository! This guide will walk you through the complete ASIC design flow, from high-level programming to layout creation.
 
 ## Table of Contents
-### DAY 1
-- Introduction to RISCV ISA and GNU Compiler Toolchain
-- Introduction to Basic Keywords
-  - Introduction
-  - From Apps to Hardware
-- Detailed Course Content Description
-- Labwork for RISCV Toolchain
-  - C Program
-  - RISCV GCC Compiler and Disassemble
-  - Spike Simulation and Debug
-  - Integer Number Representation
+- [Introduction](#introduction)
+- [Flow Overview](#flow-overview)
+- [Tools and Prerequisites](#tools-and-prerequisites)
+- [Course Structure](#course-structure)
+  - [Day 1](#day-1-introduction-to-riscv-isa-and-gnu-compiler-toolchain)
+  - [Day 2](#day-2-introduction-to-abi-and-basic-verification-flow)
+  - [Day 3](#day-3)
 
-### DAY 2
-- Introduction to ABI and Basic Verification Flow
-  - Application Binary Interface (ABI)
-- Memory Allocation for Double Words
-- Load, Add, and Store Instructions
-- 32-Registers and Their ABI Names
-- Labwork using ABI Function Calls
-  - Algorithm for C Program using ASM
-  - Review ASM Function Calls
-  - Simulate C Program using Function Call
+## <a name="introduction"></a>Introduction
+This repository provides guidance on completing the ASIC design flow from scratch, using the RISC-V architecture. Learn how to go from high-level languages to physical layout.
 
-### ISA (Instruction Set Architecture)
-ISA defines how a computer's hardware and software interact. It encompasses instructions, addressing modes, data types, registers, memory organization, and execution mechanisms.
+## <a name="flow-overview"></a>Flow Overview
+1. **HLL (High-Level Language)**: Understand the basics of high-level programming languages such as C and C++.
+2. **ALP (Assembly Level Program)**: Dive into assembly language programming and its importance in CPU architecture.
+3. **HDL (Hardware Description Language)**: Explore hardware description languages like Verilog, System Verilog, and VHDL for designing digital circuits.
+4. **GDS (Graphic Data System)**: Learn about layout design using tools like Klayout and Magic.
 
-*RISC-V (Reduced Instruction Set Computing - Five)*
-An open-source ISA gaining prominence in computer architecture and semiconductor design. RISC architectures focus on a smaller set of instructions, often leading to faster execution.
+## <a name="tools-and-prerequisites"></a>Tools and Prerequisites
+Before you begin, make sure you have the necessary tools and prerequisites installed on your system. You can follow the provided installation script to set up the required environment.
 
-### From Apps to Hardware
-Applications, system software, operating systems, compilers, and assemblers together form a layered approach to computing, bridging the gap between user tasks and hardware operations.
+## <a name="course-structure"></a>Course Structure
+### <a name="day-1-introduction-to-riscv-isa-and-gnu-compiler-toolchain"></a>Day 1: Introduction to RISC-V ISA and GNU Compiler Toolchain
+- Learn about Instruction Set Architecture (ISA) and its importance in CPU functionality.
+- Understand the RISC-V ISA, an open-source and customizable instruction set.
+- Explore various extensions in the RISC-V ISA, such as integer, floating-point, and atomic instructions.
+- Compile and execute programs using both C compiler and RISC-V compiler.
 
-### Detail Description of Course Content
-- Pseudo Instructions simplify coding patterns (e.g., li, mv).
-- Base Integer Instructions for arithmetic and logic (e.g., add, sub, and, or, xor, sll).
-- Multiply Extension Instructions enhance multiplication capabilities (e.g., mul, mulh).
-- Single and Double Precision Floating Point Extensions for accurate calculations (F and D extensions).
-- Application Binary Interface (ABI) rules for software interaction.
-- Memory Allocation and Stack Pointer management.
-- Load, Add, and Store Instructions for data manipulation.
-- 32-Registers and their ABI Names to standardize register usage.
+### <a name="day-2-introduction-to-abi-and-basic-verification-flow"></a>Day 2: Introduction to ABI and Basic Verification Flow
+- Dive into Application Binary Interface (ABI) and its role in software-hardware interaction.
+- Discover the basics of verification flow and how it ensures proper design functionality.
+- Explore compressed instruction formats that optimize code size while maintaining functionality.
+- Learn about supervisor-level instructions for managing system operations.
 
-### Labwork for RISCV Toolchain
-- C Program: Calculate sum from 1 to n.
-- RISCV GCC Compiler and Disassemble: Compile and view assembly code.
-- Spike Simulation and Debug: Verify instruction correctness.
-- Integer Number Representation: Understand signed and unsigned numbers.
+### <a name="day-3"></a>Day 3:
 
-### Application Binary Interface (ABI)
-ABI defines rules for binary code interaction, enabling different software components to work seamlessly. It governs function calls, parameter passing, memory allocation, and more.
+## Conclusion
+By the end of this workshop, you will have gained a solid understanding of the complete ASIC design flow, from programming in high-level languages to creating layout designs. Feel free to explore the content for each day and take your skills to the next level!
 
-### Memory Allocation for Double Words
-Learn to load 64-bit numbers into memory using little-endian and big-endian representations.
 
-### Load, Add, and Store Instructions
-Master fundamental operations for data manipulation in assembly programming.
+**Note**: This repository is a result of VLSI Physical Design Course taught by Kunal Ghosh, tailored to provide a comprehensive workshop experience.
 
-### 32-Registers and Their ABI Names
-Understand the significance of ABI names for registers and their roles in software compatibility and communication.
-
-### Labwork using ABI Function Calls
-Implement algorithms, simulate programs, and review ASM function calls for effective code generation.
-
-### Algorithm for C Program using ASM
-Integrate assembly language code with C programs using inline assembly or separate files.
-
-## Simulation
-Compile the code and execute the object file using Spike for thorough testing and debugging.
+---
