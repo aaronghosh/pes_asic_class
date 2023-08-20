@@ -1,6 +1,6 @@
 # VLSI Physical Design for ASICs
 
-Welcome to the ASIC Design Workshop repository! This guide will walk you through the complete ASIC design flow, from high-level programming to layout creation.
+This Repository contains the files for the VLSI Physical Design for ASICs course offered by PES University taught by Kunal Ghosh.
 
 ## Table of Contents
 - [Introduction](#introduction)
