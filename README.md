@@ -1,4 +1,4 @@
-# ASIC Design Workshop
+# VLSI Physical Design for ASICs
 
 Welcome to the ASIC Design Workshop repository! This guide will walk you through the complete ASIC design flow, from high-level programming to layout creation.
 
