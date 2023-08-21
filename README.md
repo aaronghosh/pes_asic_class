@@ -41,6 +41,4 @@ Before you begin, make sure you have the necessary tools and prerequisites insta
 ## Conclusion
 The aim of this course is to gain a solid understanding of the complete ASIC design flow, from programming in high-level languages to creating layout designs. 
 
-**Note**: This repository is a result of VLSI Physical Design Course taught by Kunal Ghosh, tailored to provide a comprehensive workshop experience.
-
 ---
