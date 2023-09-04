@@ -7,10 +7,10 @@ Welcome to the VLSI Physical Design for ASICs course repository offered by PES U
 - [Flow Overview](#flow-overview)
 - [Tools and Prerequisites](#tools-and-prerequisites)
 - [Course Structure](#course-structure)
-  - [Day 1](#day-1-introduction-to-riscv-isa-and-gnu-compiler-toolchain)
-  - [Day 2](#day-2-introduction-to-abi-and-basic-verification-flow)
-  - [Day 3](#day-3-introduction-to-verilog-rtl-design-and-synthesis)
-  - [Day 4](#day-4-introduction-to-timing-labs)
+  - [Day 1](./DAY1#day-1-introduction-to-riscv-isa-and-gnu-compiler-toolchain)
+  - [Day 2](./DAY2#day-2-introduction-to-abi-and-basic-verification-flow)
+  - [Day 3](./DAY3#day-3-introduction-to-verilog-rtl-design-and-synthesis)
+  - [Day 4](./DAY4#day-4-introduction-to-timing-labs)
 
 ## <a name="introduction"></a>Introduction
 This repository provides essential materials to guide you through the ASIC design flow, starting from the fundamentals and leading to physical layout design. You will gain a comprehensive understanding of the entire process.
