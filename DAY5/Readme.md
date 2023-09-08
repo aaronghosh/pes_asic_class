@@ -1,8 +1,4 @@
-# Logic Optimization
 
-## Combinational Logic Optimization
-
-### Constant Propagation
 # Logic Optimization
 
 ## Combinational Logic Optimization
