@@ -11,6 +11,8 @@ Welcome to the VLSI Physical Design for ASICs course repository offered by PES U
   - [Day 2](./DAY2#day-2-introduction-to-abi-and-basic-verification-flow)
   - [Day 3](./DAY3#day-3-introduction-to-verilog-rtl-design-and-synthesis)
   - [Day 4](./DAY4#day-4-introduction-to-timing-labs)
+  - [Day 5](./DAY5#day-5-combinational-and-sequential-optimizations) - [Details Below]
+  - [Day 6](./DAY6#day-6-gls-synthesis-solution-mismatch) - [Details Below]
 
 ## <a name="introduction"></a>Introduction
 This repository provides essential materials to guide you through the ASIC design flow, starting from the fundamentals and leading to physical layout design. You will gain a comprehensive understanding of the entire process.
@@ -47,7 +49,43 @@ Before you begin, make sure you have the necessary tools and prerequisites insta
 - Understanding hierarchical and flat synthesis.
 - Synthesizing flip-flops with various coding styles and optimizations.
 
+### <a name="day-5-combinational-and-sequential-optimizations"></a>Day 5: Combinational and Sequential Optimizations
+- Combinational Logic Optimization
+      
+    -Introduction to optimizing combinational logic circuits.
+    -Techniques for reducing gate count and improving performance.
+    -Examples of constant propagation and boolean logic optimization.
+-Sequential Logic Optimization
+    
+    -Introduction to optimizing sequential logic circuits.
+    -Techniques for reducing flip-flop count and improving timing.
+    -Sequential constant propagation and state optimization.
+
+-Retiming
+      
+      Explanation of retiming as a technique to optimize sequential circuits.
+      How retiming helps improve the performance of a design.
+      Sequential Logic Cloning
+
+Overview of sequential logic cloning as an optimization technique.
+Use cases and benefits of cloning sequential logic elements.
+
+### <a name="day-6-gls-synthesis-solution-mismatch"></a>Day 6: GLS, Synthesis Solution Mismatch
+
+-Gate Level Simulation (GLS)
+
+    Introduction to GLS and its importance in post-synthesis verification.
+    Using GLS to verify the functionality and timing requirements of a design.
+    Synthesis Solution Mismatch
+
+-Common reasons for synthesis simulation mismatches.
+    Identifying issues such as missing sensitivity lists and non-standard Verilog coding.
+    How to debug and resolve synthesis simulation mismatches.
+
+
 ## Conclusion
-The aim of this course is to gain a solid understanding of the complete ASIC design flow, from programming in high-level languages to creating layout designs. 
+The aim of this course is to gain a solid understanding of the complete ASIC design flow, from programming in high-level languages to creating layout designs.
 
 ---
+
+
