@@ -11,9 +11,8 @@ Welcome to the VLSI Physical Design for ASICs course repository offered by PES U
   - [Day 2](./DAY2#day-2-introduction-to-abi-and-basic-verification-flow)
   - [Day 3](./DAY3#day-3-introduction-to-verilog-rtl-design-and-synthesis)
   - [Day 4](./DAY4#day-4-introduction-to-timing-labs)
-  - [Day 5](./DAY5#day-5-combinational-and-sequential-optimizations) - [Details Below]
-  - [Day 6](./DAY6#day-6-gls-synthesis-solution-mismatch) - [Details Below]
-
+  - [Day 5](./DAY5#day-5-combinational-and-sequential-optimizations) 
+  - [Day 6](./DAY6#day-6-gls-synthesis-solution-mismatch) 
 ## <a name="introduction"></a>Introduction
 This repository provides essential materials to guide you through the ASIC design flow, starting from the fundamentals and leading to physical layout design. You will gain a comprehensive understanding of the entire process.
 
