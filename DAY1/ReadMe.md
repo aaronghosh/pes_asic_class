@@ -14,7 +14,7 @@ This code sums numbers from 1 to n
 gcc lab1/sum1ton.c
 ```
 
-This runs it using gcc, on our machine.
+running it using gcc
 
 ```shell
 cat lab1/sum1ton.c
@@ -46,8 +46,7 @@ riscv64-unknown-elf-gcc -0fast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 ![image](https://github.com/aaronghosh/pes_asic_class/assets/124378527/25badfaf-5ac5-4e8a-afb6-6224d09a656d)
 
 ## Signed and Unsigned Integers
-
-Put this code in a c file unsignedHighest.c to calculate the largest int.
+create a new C file
 ```c
 #include <stdio.h>
 #include <math.h>
@@ -58,7 +57,7 @@ int main(){
 	return 0;
 }
 ```
-Compile the code and view output using:
+Compile the code and view output 
 ```bash
 riscv64-unknown-elf-gcc -0fast -mabi=lp64 -march=rv64i -o unsignedHighest.o unsignedHighest.c
 
@@ -68,12 +67,3 @@ spike pk -d unsignedHighest.o
 
 ![image](https://github.com/aaronghosh/pes_asic_class/assets/124378527/4eed4226-a2a8-4a8c-9b12-d3096ab06189)
 
-
-
-riscv64-unknown-elf-gcc -01 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
-ls -ltr sum1ton.o
-```
-
->o1 - Level 1 optimization
->lp64 - l (long integer) p(pointer) 
->march -  
