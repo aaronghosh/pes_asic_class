@@ -3,7 +3,7 @@
 Open your terminal and run the following command to create a  ```.c```  file. 
 
 ```shell 
-vim lab1/sum1ton.c 
+gedit lab1/sum1ton.c 
 ```
 This code sums numbers from 1 to n
  ![image](https://github.com/aaronghosh/pes_asic_class/assets/124378527/9f4639f9-04ef-4e8b-80a3-b24996bc170c)
@@ -36,16 +36,14 @@ Gives the output ```Sum from 1 to 50 = 1275```
 ```bash
 riscv64-unknown-elf-objdump -d  sum1ton.o 
 ```
-![image](https://github.com/aaronghosh/pes_asic_class/assets/124378527/58d7c9fd-913b-4f4a-a431-11865771612a)
+![image](https://github.com/aaronghosh/pes_asic_class/assets/124378527/581f6fc7-d2cd-4980-8379-259d03c73d97)
 
 
     Repeating the above but with ofast :
 
 riscv64-unknown-elf-gcc -0fast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 
-![image](https://github.com/aaronghosh/pes_asic_class/assets/124378527/4a562ed5-5208-4bbc-9632-5ac271c2c7fd)
-![image](https://github.com/aaronghosh/pes_asic_class/assets/124378527/96043cc0-5ae3-4774-96e2-f8c861937288)
-
+![image](https://github.com/aaronghosh/pes_asic_class/assets/124378527/25badfaf-5ac5-4e8a-afb6-6224d09a656d)
 
 ## Signed and Unsigned Integers
 
@@ -66,9 +64,9 @@ riscv64-unknown-elf-gcc -0fast -mabi=lp64 -march=rv64i -o unsignedHighest.o unsi
 
 spike pk -d unsignedHighest.o
 ```
-![image](https://github.com/aaronghosh/pes_asic_class/assets/124378527/9288dddc-ad4b-4ac4-b798-6edb3bcaee1f)
 
 
+![image](https://github.com/aaronghosh/pes_asic_class/assets/124378527/4eed4226-a2a8-4a8c-9b12-d3096ab06189)
 
 
 
