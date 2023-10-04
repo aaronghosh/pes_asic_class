@@ -63,20 +63,9 @@ RISC-V instructions have a common structure with several fields that serve diffe
 
 ## ASM calls in C
 
-Create a C file, [1to9.c]
-```c
-#include<stdio.h>
+Create a C file, [sum1to9.c]
+![image](https://github.com/aaronghosh/pes_asic_class/assets/124378527/956dabac-6ad5-4011-bd65-f74a12158242)
 
-extern int load(int x, int y);
-
-int main(){
-  int result = 0;
-  int count = 9;
-  result = load(0x0, count+1);   //passed to asm program via function call
-  //result returned in a0 register
-  printf("Sum of numbers from 1 to %d = %d/n", count, result);
-}
-```
 In the same directory, we have our load function, [load.S] in assembly.
 ```asm
 .section .text
@@ -99,7 +88,7 @@ Compile the above C code with the Ofast optimization. Remember to include the as
 riscv64-unknown-elf-gcc -01 -mabi=lp64 -march=rv64i -o 1to9.o 1to9.c load.S
 spike pk -o 1to9.o 
 ```
-![image](https://github.com/aaronghosh/pes_asic_class/assets/124378527/f3a22871-64d1-4229-91d9-0e5ab2605740)
+![image](https://github.com/aaronghosh/pes_asic_class/assets/124378527/9080897b-370c-4687-b2df-0c324c04c413)
 
 # C code on a RISC V CPU
 
@@ -112,7 +101,6 @@ cd into the labs directory within the repo, and then make the rv32im.sh an execu
 chmod 777 rv32im.sh
 ./rv32im.sh
 ```
-![image](https://github.com/aaronghosh/pes_asic_class/assets/124378527/891d10c3-4bc2-4343-a37b-5e5d72c20c19)
 
 - First taking a look at the rv32im.sh file, we can see that we first compile the 1to9.c code using 32 bit arch. We also compile the load.S file.
 - Next Syscalls.c is compiled.
@@ -122,4 +110,4 @@ chmod 777 rv32im.sh
 - Next we concatenate verilog files and generate a firmware hex file.
 - The 8 bit hex file is converted to a 32 bit hex file.
 - A testbench is compiled and finally, executed.
-![image](https://github.com/aaronghosh/pes_asic_class/assets/124378527/65061387-1d3b-46a0-8bca-3576aa6a0e00)
+- ![image](https://github.com/aaronghosh/pes_asic_class/assets/124378527/dd9361fc-1dbe-4f0d-85f0-cb16935cfbcb)
