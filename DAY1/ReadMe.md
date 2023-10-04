@@ -38,11 +38,8 @@ riscv64-unknown-elf-objdump -d  sum1ton.o
 ```
 ![image](https://github.com/aaronghosh/pes_asic_class/assets/124378527/581f6fc7-d2cd-4980-8379-259d03c73d97)
 
-
-    Repeating the above but with ofast :
-
 riscv64-unknown-elf-gcc -0fast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
-
+Now check the output using spike
 ![image](https://github.com/aaronghosh/pes_asic_class/assets/124378527/25badfaf-5ac5-4e8a-afb6-6224d09a656d)
 
 ## Signed and Unsigned Integers
